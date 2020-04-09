@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <>
+    <div>
       <ul data-testid="repository-list">
         {repositories.map((repository) => (
           <li key={repository.id}>
@@ -43,8 +43,10 @@ function App() {
         ))}
       </ul>
 
-      <button onClick={handleAddRepository}>Adicionar</button>
-    </>
+      <button className="submitButton" onClick={handleAddRepository}>
+        Adicionar
+      </button>
+    </div>
   );
 }
 
