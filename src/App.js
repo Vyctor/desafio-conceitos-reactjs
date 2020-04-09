@@ -27,11 +27,12 @@ function App() {
   async function handleRemoveRepository(id) {
     await api.delete(`repositories/${id}`);
 
-    setRepositories(repositories.filter((repository) => repository.id != id));
+    setRepositories(repositories.filter((repository) => repository.id !== id));
   }
 
   return (
     <div>
+      <h1>Meus repositórios</h1>
       <ul data-testid="repository-list">
         {repositories.map((repository) => (
           <li key={repository.id}>

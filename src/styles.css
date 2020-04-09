@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-size: 14px;
   background-color: #222;
@@ -11,6 +15,13 @@ body {
 
 div {
   padding: 25px;
+}
+
+div h1 {
+  color: #fff;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 div ul {
